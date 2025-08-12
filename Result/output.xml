@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.8 on win32)" generated="20250812 13:47:10.269" rpa="false" schemaversion="4">
+<suite id="s1" name="TestSuiteOne" source="C:\GitHub\OrangeHRM\Santechture\Suites\TestSuiteOne.robot">
+<test id="s1-t1" name="Add and delete user" line="14">
+<kw name="Initialize Driver" library="Common" type="SETUP">
+<kw name="Set All Variables" library="Common">
+<kw name="Get URL" library="Common">
+<kw name="Get Cell Data From Excell" library="ExcellHandler">
+<var>${cell_data}</var>
+<arg>${Excel_PATH}</arg>
+<arg>2</arg>
+<arg>2</arg>
+<arg>Sheet1</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20250812 13:47:14.091" endtime="20250812 13:47:14.119"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${Cell_Data}</var>
+<arg>${Row_No}</arg>
+<arg>${Column-No}</arg>
+<arg>${SheetName}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20250812 13:47:14.120" level="INFO">${Cell_Data} = https://opensource-demo.orangehrmlive.com/</msg>
+<status status="PASS" starttime="20250812 13:47:14.119" endtime="20250812 13:47:14.120"/>
+</kw>
+<kw name="Close All Excel Documents" library="ExcelLibrary">
+<doc>Closes all opened documents.</doc>
+<status status="PASS" starttime="20250812 13:47:14.121" endtime="20250812 13:47:14.121"/>
+</kw>
+<msg timestamp="20250812 13:47:14.122" level="INFO">${cell_data} = https://opensource-demo.orangehrmlive.com/</msg>
+<status status="PASS" starttime="20250812 13:47:14.090" endtime="20250812 13:47:14.122"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${URL}</arg>
+<arg>${cell_data}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20250812 13:47:14.123" level="INFO">${URL} = https://opensource-demo.orangehrmlive.com/</msg>
+<status status="PASS" starttime="20250812 13:47:14.122" endtime="20250812 13:47:14.123"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:14.090" endtime="20250812 13:47:14.123"/>
+</kw>
+<kw name="Get Username" library="Common">
+<kw name="Get Cell Data From Excell" library="ExcellHandler">
+<var>${cell_data}</var>
+<arg>${Excel_PATH}</arg>
+<arg>3</arg>
+<arg>2</arg>
+<arg>Sheet1</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20250812 13:47:14.125" endtime="20250812 13:47:14.156"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${Cell_Data}</var>
+<arg>${Row_No}</arg>
+<arg>${Column-No}</arg>
+<arg>${SheetName}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20250812 13:47:14.157" level="INFO">${Cell_Data} = Admin</msg>
+<status status="PASS" starttime="20250812 13:47:14.157" endtime="20250812 13:47:14.157"/>
+</kw>
+<kw name="Close All Excel Documents" library="ExcelLibrary">
+<doc>Closes all opened documents.</doc>
+<status status="PASS" starttime="20250812 13:47:14.157" endtime="20250812 13:47:14.158"/>
+</kw>
+<msg timestamp="20250812 13:47:14.158" level="INFO">${cell_data} = Admin</msg>
+<status status="PASS" starttime="20250812 13:47:14.124" endtime="20250812 13:47:14.158"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${USERNAME}</arg>
+<arg>${cell_data}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20250812 13:47:14.159" level="INFO">${USERNAME} = Admin</msg>
+<status status="PASS" starttime="20250812 13:47:14.158" endtime="20250812 13:47:14.159"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:14.123" endtime="20250812 13:47:14.159"/>
+</kw>
+<kw name="Get Password" library="Common">
+<kw name="Get Cell Data From Excell" library="ExcellHandler">
+<var>${cell_data}</var>
+<arg>${Excel_PATH}</arg>
+<arg>4</arg>
+<arg>2</arg>
+<arg>Sheet1</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20250812 13:47:14.161" endtime="20250812 13:47:14.184"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${Cell_Data}</var>
+<arg>${Row_No}</arg>
+<arg>${Column-No}</arg>
+<arg>${SheetName}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20250812 13:47:14.185" level="INFO">${Cell_Data} = admin123</msg>
+<status status="PASS" starttime="20250812 13:47:14.185" endtime="20250812 13:47:14.186"/>
+</kw>
+<kw name="Close All Excel Documents" library="ExcelLibrary">
+<doc>Closes all opened documents.</doc>
+<status status="PASS" starttime="20250812 13:47:14.186" endtime="20250812 13:47:14.186"/>
+</kw>
+<msg timestamp="20250812 13:47:14.186" level="INFO">${cell_data} = admin123</msg>
+<status status="PASS" starttime="20250812 13:47:14.160" endtime="20250812 13:47:14.186"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${PASSWORD}</arg>
+<arg>${cell_data}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20250812 13:47:14.187" level="INFO">${PASSWORD} = admin123</msg>
+<status status="PASS" starttime="20250812 13:47:14.187" endtime="20250812 13:47:14.187"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:14.159" endtime="20250812 13:47:14.187"/>
+</kw>
+<kw name="Get Browser" library="Common">
+<kw name="Get Cell Data From Excell" library="ExcellHandler">
+<var>${cell_data}</var>
+<arg>${Excel_PATH}</arg>
+<arg>5</arg>
+<arg>2</arg>
+<arg>Sheet1</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20250812 13:47:14.188" endtime="20250812 13:47:14.207"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${Cell_Data}</var>
+<arg>${Row_No}</arg>
+<arg>${Column-No}</arg>
+<arg>${SheetName}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20250812 13:47:14.208" level="INFO">${Cell_Data} = chrome</msg>
+<status status="PASS" starttime="20250812 13:47:14.207" endtime="20250812 13:47:14.208"/>
+</kw>
+<kw name="Close All Excel Documents" library="ExcelLibrary">
+<doc>Closes all opened documents.</doc>
+<status status="PASS" starttime="20250812 13:47:14.208" endtime="20250812 13:47:14.209"/>
+</kw>
+<msg timestamp="20250812 13:47:14.209" level="INFO">${cell_data} = chrome</msg>
+<status status="PASS" starttime="20250812 13:47:14.188" endtime="20250812 13:47:14.209"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${BROWSER}</arg>
+<arg>${cell_data}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20250812 13:47:14.210" level="INFO">${BROWSER} = chrome</msg>
+<status status="PASS" starttime="20250812 13:47:14.209" endtime="20250812 13:47:14.210"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:14.187" endtime="20250812 13:47:14.210"/>
+</kw>
+<kw name="Get Role" library="Common">
+<kw name="Get Cell Data From Excell" library="ExcellHandler">
+<var>${cell_data}</var>
+<arg>${Excel_PATH}</arg>
+<arg>6</arg>
+<arg>2</arg>
+<arg>Sheet1</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20250812 13:47:14.217" endtime="20250812 13:47:14.243"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${Cell_Data}</var>
+<arg>${Row_No}</arg>
+<arg>${Column-No}</arg>
+<arg>${SheetName}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20250812 13:47:14.244" level="INFO">${Cell_Data} = ESS</msg>
+<status status="PASS" starttime="20250812 13:47:14.243" endtime="20250812 13:47:14.244"/>
+</kw>
+<kw name="Close All Excel Documents" library="ExcelLibrary">
+<doc>Closes all opened documents.</doc>
+<status status="PASS" starttime="20250812 13:47:14.245" endtime="20250812 13:47:14.245"/>
+</kw>
+<msg timestamp="20250812 13:47:14.245" level="INFO">${cell_data} = ESS</msg>
+<status status="PASS" starttime="20250812 13:47:14.216" endtime="20250812 13:47:14.245"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${ROLE}</arg>
+<arg>${cell_data}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20250812 13:47:14.249" level="INFO">${ROLE} = ESS</msg>
+<status status="PASS" starttime="20250812 13:47:14.246" endtime="20250812 13:47:14.249"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:14.211" endtime="20250812 13:47:14.250"/>
+</kw>
+<kw name="Get Status" library="Common">
+<kw name="Get Cell Data From Excell" library="ExcellHandler">
+<var>${cell_data}</var>
+<arg>${Excel_PATH}</arg>
+<arg>7</arg>
+<arg>2</arg>
+<arg>Sheet1</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20250812 13:47:14.252" endtime="20250812 13:47:14.278"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${Cell_Data}</var>
+<arg>${Row_No}</arg>
+<arg>${Column-No}</arg>
+<arg>${SheetName}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20250812 13:47:14.283" level="INFO">${Cell_Data} = Enabled</msg>
+<status status="PASS" starttime="20250812 13:47:14.282" endtime="20250812 13:47:14.283"/>
+</kw>
+<kw name="Close All Excel Documents" library="ExcelLibrary">
+<doc>Closes all opened documents.</doc>
+<status status="PASS" starttime="20250812 13:47:14.283" endtime="20250812 13:47:14.284"/>
+</kw>
+<msg timestamp="20250812 13:47:14.284" level="INFO">${cell_data} = Enabled</msg>
+<status status="PASS" starttime="20250812 13:47:14.250" endtime="20250812 13:47:14.284"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${STATUS}</arg>
+<arg>${cell_data}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20250812 13:47:14.285" level="INFO">${STATUS} = Enabled</msg>
+<status status="PASS" starttime="20250812 13:47:14.284" endtime="20250812 13:47:14.285"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:14.250" endtime="20250812 13:47:14.285"/>
+</kw>
+<kw name="Get Employee Name" library="Common">
+<kw name="Get Cell Data From Excell" library="ExcellHandler">
+<var>${cell_data}</var>
+<arg>${Excel_PATH}</arg>
+<arg>8</arg>
+<arg>2</arg>
+<arg>Sheet1</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20250812 13:47:14.287" endtime="20250812 13:47:14.326"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${Cell_Data}</var>
+<arg>${Row_No}</arg>
+<arg>${Column-No}</arg>
+<arg>${SheetName}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20250812 13:47:14.327" level="INFO">${Cell_Data} = Aniketrz  Raivdg</msg>
+<status status="PASS" starttime="20250812 13:47:14.326" endtime="20250812 13:47:14.327"/>
+</kw>
+<kw name="Close All Excel Documents" library="ExcelLibrary">
+<doc>Closes all opened documents.</doc>
+<status status="PASS" starttime="20250812 13:47:14.327" endtime="20250812 13:47:14.328"/>
+</kw>
+<msg timestamp="20250812 13:47:14.328" level="INFO">${cell_data} = Aniketrz  Raivdg</msg>
+<status status="PASS" starttime="20250812 13:47:14.286" endtime="20250812 13:47:14.328"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${EMPLOYEE_NAME}</arg>
+<arg>${cell_data}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20250812 13:47:14.329" level="INFO">${EMPLOYEE_NAME} = Aniketrz  Raivdg</msg>
+<status status="PASS" starttime="20250812 13:47:14.328" endtime="20250812 13:47:14.329"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:14.285" endtime="20250812 13:47:14.329"/>
+</kw>
+<kw name="Get Username For new user" library="Common">
+<kw name="Get Cell Data From Excell" library="ExcellHandler">
+<var>${cell_data}</var>
+<arg>${Excel_PATH}</arg>
+<arg>9</arg>
+<arg>2</arg>
+<arg>Sheet1</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20250812 13:47:14.333" endtime="20250812 13:47:14.370"/>
+</kw>
+<kw name="Read Excel Cell" library="ExcelLibrary">
+<var>${Cell_Data}</var>
+<arg>${Row_No}</arg>
+<arg>${Column-No}</arg>
+<arg>${SheetName}</arg>
+<doc>Returns content of a cell.</doc>
+<msg timestamp="20250812 13:47:14.371" level="INFO">${Cell_Data} = ahmed86</msg>
+<status status="PASS" starttime="20250812 13:47:14.370" endtime="20250812 13:47:14.371"/>
+</kw>
+<kw name="Close All Excel Documents" library="ExcelLibrary">
+<doc>Closes all opened documents.</doc>
+<status status="PASS" starttime="20250812 13:47:14.371" endtime="20250812 13:47:14.371"/>
+</kw>
+<msg timestamp="20250812 13:47:14.372" level="INFO">${cell_data} = ahmed86</msg>
+<status status="PASS" starttime="20250812 13:47:14.332" endtime="20250812 13:47:14.372"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${USERNAME_NEW}</arg>
+<arg>${cell_data}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<msg timestamp="20250812 13:47:14.373" level="INFO">${USERNAME_NEW} = ahmed86</msg>
+<status status="PASS" starttime="20250812 13:47:14.372" endtime="20250812 13:47:14.373"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:14.330" endtime="20250812 13:47:14.373"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:14.089" endtime="20250812 13:47:14.373"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20250812 13:47:14.373" endtime="20250812 13:47:14.375"/>
+</kw>
+<kw name="Set Selenium Timeout" library="SeleniumLibrary">
+<arg>20s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" starttime="20250812 13:47:14.375" endtime="20250812 13:47:14.376"/>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20250812 13:47:14.377" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20250812 13:47:14.376" endtime="20250812 13:47:24.831"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20250812 13:47:24.832" endtime="20250812 13:47:25.505"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:14.088" endtime="20250812 13:47:25.505"/>
+</kw>
+<kw name="Login with username and password" library="LoginPage">
+<kw name="Enter Username" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${usernamePlaceholder}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250812 13:47:25.600" endtime="20250812 13:47:26.416"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${usernamePlaceholder}</arg>
+<arg>${USERNAME}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250812 13:47:26.420" level="INFO">Typing text 'Admin' into text field 'xpath://input[@name='username']'.</msg>
+<status status="PASS" starttime="20250812 13:47:26.418" endtime="20250812 13:47:27.576"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:25.599" endtime="20250812 13:47:27.578"/>
+</kw>
+<kw name="Enter Password" library="LoginPage">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${passwordPlaceholder}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250812 13:47:27.578" endtime="20250812 13:47:28.054"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${passwordPlaceholder}</arg>
+<arg>${PASSWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250812 13:47:28.057" level="INFO">Typing text 'admin123' into text field 'xpath://input[@name='password']'.</msg>
+<status status="PASS" starttime="20250812 13:47:28.055" endtime="20250812 13:47:30.837"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:27.578" endtime="20250812 13:47:30.837"/>
+</kw>
+<kw name="Click Login" library="LoginPage">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${loginBtn}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20250812 13:47:30.838" endtime="20250812 13:47:31.438"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${loginBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250812 13:47:31.439" level="INFO">Clicking element 'xpath://button[@type='submit']'.</msg>
+<status status="PASS" starttime="20250812 13:47:31.438" endtime="20250812 13:47:35.135"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:30.837" endtime="20250812 13:47:35.135"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:25.598" endtime="20250812 13:47:35.135"/>
+</kw>
+<kw name="Verify Dashboard Page Loaded" library="Dashboard">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Dashboard</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20250812 13:47:35.136" endtime="20250812 13:47:36.384"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:35.136" endtime="20250812 13:47:36.384"/>
+</kw>
+<kw name="Click on Admin Button" library="NaigationMenu">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${adminBtn}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250812 13:47:36.395" endtime="20250812 13:47:36.739"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${adminBtn}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250812 13:47:36.740" level="INFO">Clicking element 'xpath://span[text()='Admin']'.</msg>
+<status status="PASS" starttime="20250812 13:47:36.739" endtime="20250812 13:47:39.288"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:36.395" endtime="20250812 13:47:39.288"/>
+</kw>
+<kw name="Verify AdminUserManagement Page Loaded" library="AdminUserManagement">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>User Management</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20250812 13:47:39.297" endtime="20250812 13:47:39.815"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:39.296" endtime="20250812 13:47:39.815"/>
+</kw>
+<kw name="Get Record Count" library="AdminUserManagement">
+<var>${recordCountBefore}</var>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${recordCountLabel}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250812 13:47:39.822" endtime="20250812 13:47:40.814"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${recordCountLabel}</var>
+<arg>${recordCountLabel}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20250812 13:47:41.240" level="INFO">${recordCountLabel} = (23) Records Found</msg>
+<status status="PASS" starttime="20250812 13:47:40.815" endtime="20250812 13:47:41.240"/>
+</kw>
+<kw name="Replace String Using Regexp" library="String">
+<var>${Count}</var>
+<arg>${recordCountLabel}</arg>
+<arg>[^0-9]</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``pattern`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20250812 13:47:41.244" level="INFO">${Count} = 23</msg>
+<status status="PASS" starttime="20250812 13:47:41.240" endtime="20250812 13:47:41.244"/>
+</kw>
+<msg timestamp="20250812 13:47:41.244" level="INFO">${recordCountBefore} = 23</msg>
+<status status="PASS" starttime="20250812 13:47:39.821" endtime="20250812 13:47:41.244"/>
+</kw>
+<kw name="Write Data To Excel Cell" library="ExcellHandler">
+<arg>${Excel_PATH}</arg>
+<arg>2</arg>
+<arg>2</arg>
+<arg>${recordCountBefore}</arg>
+<arg>Sheet2</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20250812 13:47:41.259" endtime="20250812 13:47:41.311"/>
+</kw>
+<kw name="Write Excel Cell" library="ExcelLibrary">
+<arg>${Row_No}</arg>
+<arg>${Column_No}</arg>
+<arg>${Value}</arg>
+<arg>${SheetName}</arg>
+<doc>Writes value to the cell.</doc>
+<status status="PASS" starttime="20250812 13:47:41.311" endtime="20250812 13:47:41.312"/>
+</kw>
+<kw name="Save Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<doc>Saves the current document to disk.</doc>
+<status status="PASS" starttime="20250812 13:47:41.313" endtime="20250812 13:47:41.467"/>
+</kw>
+<kw name="Close All Excel Documents" library="ExcelLibrary">
+<doc>Closes all opened documents.</doc>
+<status status="PASS" starttime="20250812 13:47:41.467" endtime="20250812 13:47:41.468"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:41.258" endtime="20250812 13:47:41.468"/>
+</kw>
+<kw name="Navigate to add user form" library="AdminUserManagement">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${addBTN}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250812 13:47:41.512" endtime="20250812 13:47:41.837"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${addBTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250812 13:47:41.838" level="INFO">Clicking element 'xpath://Button[contains(.,'Add')]'.</msg>
+<status status="PASS" starttime="20250812 13:47:41.837" endtime="20250812 13:47:43.069"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:41.491" endtime="20250812 13:47:43.069"/>
+</kw>
+<kw name="Add User details" library="UserManagementAddUser">
+<arg>role=${ROLE}</arg>
+<arg>status=${STATUS}</arg>
+<arg>employeeName=${EMPLOYEE_NAME}</arg>
+<arg>username=${USERNAME_NEW}</arg>
+<arg>password=${PASSWORD}</arg>
+<arg>confirmPassword=${PASSWORD}</arg>
+<kw name="Enter User Role" library="UserManagementAddUser">
+<arg>${role}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${userRoleDDL}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250812 13:47:43.082" endtime="20250812 13:47:45.270"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${userRoleDDL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250812 13:47:45.271" level="INFO">Clicking element 'xpath://label[contains(.,'User Role')]/following::div[contains(@class,'oxd-select-text')][1]'.</msg>
+<status status="PASS" starttime="20250812 13:47:45.270" endtime="20250812 13:47:45.788"/>
+</kw>
+<if>
+<branch type="IF" condition="$role== 'Admin'">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20250812 13:47:45.795" endtime="20250812 13:47:45.795"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20250812 13:47:45.796" endtime="20250812 13:47:45.796"/>
+</kw>
+<status status="NOT RUN" starttime="20250812 13:47:45.788" endtime="20250812 13:47:45.796"/>
+</branch>
+<branch type="ELSE IF" condition="$role== 'ESS'">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20250812 13:47:45.801" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20250812 13:47:45.801" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20250812 13:47:45.801" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20250812 13:47:45.796" endtime="20250812 13:47:45.918"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20250812 13:47:45.918" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20250812 13:47:45.918" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20250812 13:47:45.920" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20250812 13:47:45.918" endtime="20250812 13:47:46.034"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20250812 13:47:46.035" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20250812 13:47:46.035" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20250812 13:47:46.036" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20250812 13:47:46.034" endtime="20250812 13:47:46.150"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:45.796" endtime="20250812 13:47:46.150"/>
+</branch>
+<status status="PASS" starttime="20250812 13:47:45.788" endtime="20250812 13:47:46.150"/>
+</if>
+<status status="PASS" starttime="20250812 13:47:43.081" endtime="20250812 13:47:46.150"/>
+</kw>
+<kw name="Enter Status" library="UserManagementAddUser">
+<arg>${status}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${statusDDL}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250812 13:47:46.151" endtime="20250812 13:47:46.413"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${statusDDL}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250812 13:47:46.414" level="INFO">Clicking element 'xpath://label[contains(.,'Status')]/following::div[contains(@class,'oxd-select-text')][1]'.</msg>
+<status status="PASS" starttime="20250812 13:47:46.413" endtime="20250812 13:47:46.749"/>
+</kw>
+<if>
+<branch type="IF" condition="$status== 'Enabled'">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20250812 13:47:46.751" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20250812 13:47:46.751" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20250812 13:47:46.751" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20250812 13:47:46.749" endtime="20250812 13:47:46.864"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20250812 13:47:46.866" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20250812 13:47:46.866" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20250812 13:47:46.866" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20250812 13:47:46.864" endtime="20250812 13:47:46.978"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:46.749" endtime="20250812 13:47:46.978"/>
+</branch>
+<branch type="ELSE IF" condition="$status== 'Disabled'">
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20250812 13:47:46.978" endtime="20250812 13:47:46.978"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20250812 13:47:46.979" endtime="20250812 13:47:46.979"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20250812 13:47:46.979" endtime="20250812 13:47:46.979"/>
+</kw>
+<status status="NOT RUN" starttime="20250812 13:47:46.978" endtime="20250812 13:47:46.979"/>
+</branch>
+<status status="PASS" starttime="20250812 13:47:46.749" endtime="20250812 13:47:46.979"/>
+</if>
+<status status="PASS" starttime="20250812 13:47:46.150" endtime="20250812 13:47:46.979"/>
+</kw>
+<kw name="Enter Employee Name" library="UserManagementAddUser">
+<arg>${employeeName}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${employeeNamePH}</arg>
+<arg>${employeeName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250812 13:47:46.981" level="INFO">Typing text 'Aniketrz  Raivdg' into text field 'xpath://label[contains(.,'Employee Name')]/following::input[1]'.</msg>
+<status status="PASS" starttime="20250812 13:47:46.980" endtime="20250812 13:47:47.545"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>${employeeName}</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20250812 13:47:47.545" endtime="20250812 13:47:49.056"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ARROW_DOWN</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20250812 13:47:49.058" level="INFO">Sending key(s) ('ARROW_DOWN',) to page.</msg>
+<msg timestamp="20250812 13:47:49.058" level="INFO">Pressing special key ARROW_DOWN to browser.</msg>
+<msg timestamp="20250812 13:47:49.058" level="INFO">Releasing special key ARROW_DOWN.</msg>
+<status status="PASS" starttime="20250812 13:47:49.056" endtime="20250812 13:47:49.233"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>None</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20250812 13:47:49.235" level="INFO">Sending key(s) ('ENTER',) to page.</msg>
+<msg timestamp="20250812 13:47:49.235" level="INFO">Pressing special key ENTER to browser.</msg>
+<msg timestamp="20250812 13:47:49.235" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20250812 13:47:49.233" endtime="20250812 13:47:49.436"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:46.979" endtime="20250812 13:47:49.436"/>
+</kw>
+<kw name="Enter Username" library="UserManagementAddUser">
+<arg>${username}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${usernamePH}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250812 13:47:49.438" level="INFO">Typing text 'ahmed86' into text field 'xpath://label[contains(.,'Username')]/following::input[1]'.</msg>
+<status status="PASS" starttime="20250812 13:47:49.436" endtime="20250812 13:47:50.114"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:49.436" endtime="20250812 13:47:50.114"/>
+</kw>
+<kw name="Enter Password" library="UserManagementAddUser">
+<arg>${password}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${passwordPH}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250812 13:47:50.116" level="INFO">Typing text 'admin123' into text field 'xpath://label[text()='Password']/following::input[1]'.</msg>
+<status status="PASS" starttime="20250812 13:47:50.115" endtime="20250812 13:47:50.640"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:50.114" endtime="20250812 13:47:50.640"/>
+</kw>
+<kw name="Enter Confirm Password" library="UserManagementAddUser">
+<arg>${confirmPassword}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${confirmPasswordPH}</arg>
+<arg>${confirmPassword}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250812 13:47:50.643" level="INFO">Typing text 'admin123' into text field 'xpath://label[contains(.,'Confirm Password')]/following::input[1]'.</msg>
+<status status="PASS" starttime="20250812 13:47:50.641" endtime="20250812 13:47:51.101"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:50.640" endtime="20250812 13:47:51.101"/>
+</kw>
+<kw name="Click Save Button" library="UserManagementAddUser">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${saveBTN}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20250812 13:47:51.101" endtime="20250812 13:47:51.445"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${saveBTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250812 13:47:51.445" level="INFO">Clicking element 'xpath://button[contains(.,'Save')]'.</msg>
+<status status="PASS" starttime="20250812 13:47:51.445" endtime="20250812 13:47:51.730"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Successfully Saved</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20250812 13:47:51.730" endtime="20250812 13:47:54.025"/>
+</kw>
+<kw name="Wait Until Element Is Not Visible" library="SeleniumLibrary">
+<arg>${saveBTN}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is not visible.</doc>
+<msg timestamp="20250812 13:47:56.569" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<status status="PASS" starttime="20250812 13:47:54.025" endtime="20250812 13:47:57.009"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:51.101" endtime="20250812 13:47:57.009"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:43.069" endtime="20250812 13:47:57.009"/>
+</kw>
+<kw name="Get Record Count" library="AdminUserManagement">
+<var>${recordCountAfter}</var>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${recordCountLabel}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250812 13:47:57.010" endtime="20250812 13:47:57.891"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${recordCountLabel}</var>
+<arg>${recordCountLabel}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20250812 13:47:58.115" level="INFO">${recordCountLabel} = (24) Records Found</msg>
+<status status="PASS" starttime="20250812 13:47:57.891" endtime="20250812 13:47:58.115"/>
+</kw>
+<kw name="Replace String Using Regexp" library="String">
+<var>${Count}</var>
+<arg>${recordCountLabel}</arg>
+<arg>[^0-9]</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``pattern`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20250812 13:47:58.115" level="INFO">${Count} = 24</msg>
+<status status="PASS" starttime="20250812 13:47:58.115" endtime="20250812 13:47:58.115"/>
+</kw>
+<msg timestamp="20250812 13:47:58.115" level="INFO">${recordCountAfter} = 24</msg>
+<status status="PASS" starttime="20250812 13:47:57.010" endtime="20250812 13:47:58.115"/>
+</kw>
+<kw name="Write Data To Excel Cell" library="ExcellHandler">
+<arg>${Excel_PATH}</arg>
+<arg>3</arg>
+<arg>2</arg>
+<arg>${recordCountAfter}</arg>
+<arg>Sheet2</arg>
+<kw name="Open Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<arg>1</arg>
+<doc>Opens xlsx document file.</doc>
+<status status="PASS" starttime="20250812 13:47:58.116" endtime="20250812 13:47:58.125"/>
+</kw>
+<kw name="Write Excel Cell" library="ExcelLibrary">
+<arg>${Row_No}</arg>
+<arg>${Column_No}</arg>
+<arg>${Value}</arg>
+<arg>${SheetName}</arg>
+<doc>Writes value to the cell.</doc>
+<status status="PASS" starttime="20250812 13:47:58.125" endtime="20250812 13:47:58.127"/>
+</kw>
+<kw name="Save Excel Document" library="ExcelLibrary">
+<arg>${FilePath}</arg>
+<doc>Saves the current document to disk.</doc>
+<status status="PASS" starttime="20250812 13:47:58.127" endtime="20250812 13:47:58.155"/>
+</kw>
+<kw name="Close All Excel Documents" library="ExcelLibrary">
+<doc>Closes all opened documents.</doc>
+<status status="PASS" starttime="20250812 13:47:58.155" endtime="20250812 13:47:58.155"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:58.116" endtime="20250812 13:47:58.155"/>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<var>${expression_result}</var>
+<arg>${recordCountBefore} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20250812 13:47:58.156" level="INFO">${expression_result} = 24</msg>
+<status status="PASS" starttime="20250812 13:47:58.156" endtime="20250812 13:47:58.156"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Should Be Equal As Integers</arg>
+<arg>${recordCountAfter}</arg>
+<arg>${expression_result}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${recordCountAfter}</arg>
+<arg>${expression_result}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<msg timestamp="20250812 13:47:58.157" level="INFO">Argument types are:
+&lt;class 'str'&gt;
+&lt;class 'int'&gt;</msg>
+<status status="PASS" starttime="20250812 13:47:58.157" endtime="20250812 13:47:58.157"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:58.156" endtime="20250812 13:47:58.157"/>
+</kw>
+<kw name="Search for User By Usrname" library="AdminUserManagement">
+<arg>${USERNAME_NEW}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${sysUsersLabel}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250812 13:47:58.158" endtime="20250812 13:47:58.387"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${usernamePHM}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20250812 13:47:58.388" level="INFO">Typing text 'ahmed86' into text field 'xpath://label[contains(.,'Username')]/following::input[1]'.</msg>
+<status status="PASS" starttime="20250812 13:47:58.387" endtime="20250812 13:47:58.814"/>
+</kw>
+<kw name="Click Search Button" library="AdminUserManagement">
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>${searchBTN}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20250812 13:47:58.814" endtime="20250812 13:47:59.153"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${searchBTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250812 13:47:59.153" level="INFO">Clicking element 'xpath://button[contains(.,'Search')]'.</msg>
+<status status="PASS" starttime="20250812 13:47:59.153" endtime="20250812 13:47:59.441"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:58.814" endtime="20250812 13:47:59.441"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:58.158" endtime="20250812 13:47:59.441"/>
+</kw>
+<kw name="Delete User" library="AdminUserManagement">
+<arg>${USERNAME_NEW}</arg>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath://div[text()='${username}']</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250812 13:47:59.441" endtime="20250812 13:48:00.620"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${deleteBTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250812 13:48:00.620" level="INFO">Clicking element 'xpath://i[contains(@class,'bi-trash')]'.</msg>
+<status status="PASS" starttime="20250812 13:48:00.620" endtime="20250812 13:48:00.915"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${deletePopup}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250812 13:48:00.915" endtime="20250812 13:48:01.158"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${deleteBTNFinal}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250812 13:48:01.159" level="INFO">Clicking element 'xpath://button[contains(.,'Yes,')]'.</msg>
+<status status="PASS" starttime="20250812 13:48:01.158" endtime="20250812 13:48:01.458"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Successfully Deleted</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20250812 13:48:01.458" endtime="20250812 13:48:01.884"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain" library="SeleniumLibrary">
+<arg>Successfully Deleted</arg>
+<arg>20s</arg>
+<doc>Waits until ``text`` disappears from the current page.</doc>
+<status status="PASS" starttime="20250812 13:48:01.884" endtime="20250812 13:48:04.821"/>
+</kw>
+<status status="PASS" starttime="20250812 13:47:59.441" endtime="20250812 13:48:04.821"/>
+</kw>
+<kw name="Reset Search" library="AdminUserManagement">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${resetSearchBTN}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250812 13:48:04.821" endtime="20250812 13:48:05.063"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${resetSearchBTN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20250812 13:48:05.064" level="INFO">Clicking element 'xpath=//button[contains(.,'Reset')]'.</msg>
+<status status="PASS" starttime="20250812 13:48:05.063" endtime="20250812 13:48:05.368"/>
+</kw>
+<status status="PASS" starttime="20250812 13:48:04.821" endtime="20250812 13:48:05.368"/>
+</kw>
+<kw name="Get Record Count" library="AdminUserManagement">
+<var>${recordCountFinal}</var>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${recordCountLabel}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20250812 13:48:05.368" endtime="20250812 13:48:05.931"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${recordCountLabel}</var>
+<arg>${recordCountLabel}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20250812 13:48:06.157" level="INFO">${recordCountLabel} = (23) Records Found</msg>
+<status status="PASS" starttime="20250812 13:48:05.931" endtime="20250812 13:48:06.157"/>
+</kw>
+<kw name="Replace String Using Regexp" library="String">
+<var>${Count}</var>
+<arg>${recordCountLabel}</arg>
+<arg>[^0-9]</arg>
+<arg>${EMPTY}</arg>
+<doc>Replaces ``pattern`` in the given ``string`` with ``replace_with``.</doc>
+<msg timestamp="20250812 13:48:06.158" level="INFO">${Count} = 23</msg>
+<status status="PASS" starttime="20250812 13:48:06.157" endtime="20250812 13:48:06.158"/>
+</kw>
+<msg timestamp="20250812 13:48:06.161" level="INFO">${recordCountFinal} = 23</msg>
+<status status="PASS" starttime="20250812 13:48:05.368" endtime="20250812 13:48:06.161"/>
+</kw>
+<kw name="Run Keyword And Continue On Failure" library="BuiltIn">
+<arg>Should Be Equal As Integers</arg>
+<arg>${recordCountBefore}</arg>
+<arg>${recordCountFinal}</arg>
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<kw name="Should Be Equal As Integers" library="BuiltIn">
+<arg>${recordCountBefore}</arg>
+<arg>${recordCountFinal}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" starttime="20250812 13:48:06.161" endtime="20250812 13:48:06.162"/>
+</kw>
+<status status="PASS" starttime="20250812 13:48:06.161" endtime="20250812 13:48:06.162"/>
+</kw>
+<kw name="End Test" library="Common" type="TEARDOWN">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20250812 13:48:06.164" endtime="20250812 13:48:09.703"/>
+</kw>
+<status status="PASS" starttime="20250812 13:48:06.162" endtime="20250812 13:48:09.703"/>
+</kw>
+<doc>This test case adds a user and then deletes it.</doc>
+<status status="PASS" starttime="20250812 13:47:14.087" endtime="20250812 13:48:09.704"/>
+</test>
+<status status="PASS" starttime="20250812 13:47:10.278" endtime="20250812 13:48:09.705"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestSuiteOne">TestSuiteOne</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
